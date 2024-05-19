@@ -9,12 +9,12 @@ os.system("pip install ultralytics")
 from ultralytics import YOLO
 
 # Load a pretrained YOLOv8n model
-model = YOLO(r'C:\Users\l1kr1\OneDrive\Documents\project_ai_model_purblish\models\best.pt')
+model = YOLO(r'models\best.pt')
 
 app = Flask(__name__)
 
 # Создаем директорию для загрузки файлов, если она не существует
-UPLOAD_FOLDER = r'C:\Users\l1kr1\OneDrive\Documents\project_ai_model_purblish\uploads'
+UPLOAD_FOLDER = r'uploads'
 ALLOWED_EXTENSIONS = {'mp4', "wav"}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
